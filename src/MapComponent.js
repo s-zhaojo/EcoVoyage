@@ -64,6 +64,15 @@ const MapComponent = () => {
         </GoogleMap>
       </div>
     </LoadScript>
+     <Router>
+        <Routes>
+          <Route 
+            path="/history" 
+            element={user ? <ViewHistory user={user} /> : <Navigate to="/" />} 
+          />
+        </Routes>
+      </div>
+    </Router>
   );
 };
 
