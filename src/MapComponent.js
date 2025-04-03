@@ -28,7 +28,7 @@ const MapComponent = () => {
       alert('Please enter both start and end locations.');
       return;
     }
-    setDirections(null); // Clear previous directions
+    //setDirections(null); // Clear previous directions
   };
 
   return (
@@ -64,15 +64,7 @@ const MapComponent = () => {
         </GoogleMap>
       </div>
     </LoadScript>
-     <Router>
-        <Routes>
-          <Route 
-            path="/history" 
-            element={user ? <ViewHistory user={user} /> : <Navigate to="/" />} 
-          />
-        </Routes>
-      </div>
-    </Router>
+    
   );
 };
 
